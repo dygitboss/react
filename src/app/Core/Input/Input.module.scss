@@ -1,0 +1,31 @@
+@import "../variables";
+
+.input {
+  height: 48px;
+  font-size: $normal-font-size;
+  line-height: 150%;
+  color: $gray-800;
+  background: $white;
+  border: 1px solid #dfe6f1;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.1s;
+  padding: 6px 12px;
+
+  &:focus {
+    border-color: #2b76fb;
+    box-shadow: 0 0 4px #2b76fb;
+  }
+
+  &:disabled {
+    border-color: transparent;
+
+    /* fix safari & ios */
+    -webkit-text-fill-color: $gray-800;
+    opacity: 1;
+  }
+}
+
+.fillWidth {
+  width: 100%;
+}

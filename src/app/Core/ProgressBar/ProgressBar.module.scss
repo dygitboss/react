@@ -1,0 +1,44 @@
+@import "../variables";
+
+.wrapper {
+  border-radius: 100px;
+  width: 100%;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 100px;
+  transition: width 1s ease, background-color 0.5s ease;
+}
+
+.orange {
+  background: $orange-200;
+
+  .bar {
+    background: $orange-600;
+  }
+}
+
+.blue {
+  background: $blue-200;
+
+  .bar {
+    background: $blue-600;
+  }
+}
+
+.red {
+  background: $red-200;
+
+  .bar {
+    background: $red-600;
+  }
+}
+
+.green {
+  background: $green-200;
+
+  .bar {
+    background: $green-600;
+  }
+}
